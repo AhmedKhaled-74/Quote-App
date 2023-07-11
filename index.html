@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="warpper vh-100">
+      <main class="container-fluid container-md col-lg-9 text-center">
+        <svg viewBox="0 0 500 5">
+          <path id="curve" d="M 50,50 C 150,0 350,0 450,50" />
+          <text>
+            <textPath xlink:href="#curve">Quote of the Day</textPath>
+          </text>
+        </svg>
+        <p class="mt-lg-3 pb-2 text-white fw-bolder press">
+          Press the button below to recieve a random quote!
+        </p>
+        <button id="mainBtn" class="rounded-2 action-btn border-0 mt-5">
+          New Quote
+        </button>
+        <blockquote class="text-center mt-5 col-xl-10 mx-auto pt-2">
+          <p class="quote-text" id="textQuote"></p>
+          <p class="quote-author" id="authorQuote"></p>
+        </blockquote>
+      </main>
+      <footer
+        class="fixed-bottom text-center py-3 d-flex align-items-center justify-content-center"
+      >
+        <p class="mb-0">
+          CopyRight 2023 &copy; By <strong> Ahmed Khaled </strong> All Rights
+          Reserved
+        </p>
+      </footer>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js" defer></script>
+    <script src="./js/index.js" defer></script>
+  </body>
+</html>
